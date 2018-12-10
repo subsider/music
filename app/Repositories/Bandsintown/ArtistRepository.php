@@ -69,7 +69,7 @@ class ArtistRepository
         }
 
         if (isset($attributes['tracker_count'])) {
-            $service->playcount = $attributes['tracker_count'];
+            $service->count = $attributes['tracker_count'];
         }
 
         if ($service->isDirty()) {

@@ -48,6 +48,7 @@ return [
     'lastfm' => [
         'id'      => 7,
         'name'    => 'Lastfm',
+        'web_url' => env('LASTFM_WEB_URL', 'https://www.last.fm/music/'),
         'api_url' => env('LASTFM_API_URL', 'http://ws.audioscrobbler.com/2.0/'),
         'api_key' => env('LASTFM_API_KEY'),
     ],
@@ -55,12 +56,14 @@ return [
     'musicbrainz' => [
         'id'      => 8,
         'name'    => 'Musicbrainz',
+        'web_url' => env('MUSICBRAINZ_WEB_URL', 'https://musicbrainz.org/'),
         'api_url' => env('MUSICBRAINZ_API_URL', 'https://musicbrainz.org/ws/2/'),
     ],
 
     'napster' => [
         'id'      => 9,
         'name'    => 'Napster',
+        'web_url' => env('NAPSTER_WEB_URL', 'https://napster.com/'),
         'api_url' => env('NAPSTER_API_URL', 'https://api.napster.com/v2.2/'),
         'api_key' => env('NAPSTER_API_KEY'),
     ],
@@ -68,6 +71,7 @@ return [
     'setlistfm' => [
         'id'      => 10,
         'name'    => 'Setlistfm',
+        'web_url' => env('SETLISTFM_WEB_URL', 'https://www.setlist.fm/'),
         'api_url' => env('SETLISTFM_API_URL', 'https://api.setlist.fm/rest/1.0/'),
         'api_key' => env('SETLISTFM_API_KEY'),
     ],

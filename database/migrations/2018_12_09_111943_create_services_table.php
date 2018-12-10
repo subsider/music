@@ -22,7 +22,7 @@ class CreateServicesTable extends Migration
             $table->text('web_url')->nullable();
             $table->text('tracklist_url')->nullable();
             $table->unsignedInteger('listeners')->nullable();
-            $table->unsignedInteger('playcount')->nullable();
+            $table->unsignedInteger('count')->nullable();
             $table->boolean('streamable')->nullable();
             $table->timestamps();
 
