@@ -38,6 +38,8 @@ class ProcessArtistInfo implements ShouldQueue
     {
         $result = $client->artist()->info($this->artist)->get();
 
+        if (! $result) return;
+
         $artist = $artistRepository->create($result);
         $artistRepository->addService($artist, $result);
         $artistRepository->addImages($artist, [

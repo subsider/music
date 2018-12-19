@@ -18,6 +18,10 @@ class ArtistResource
         $this->client = $client;
     }
 
+    /**
+     * @param string $artist
+     * @return LastfmClient
+     */
     public function search(string $artist)
     {
         $this->client->params = array_merge([

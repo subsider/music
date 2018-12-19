@@ -4,18 +4,26 @@
       <w>apikey</w>
       <w>artistmatches</w>
       <w>bandsintown</w>
+      <w>catno</w>
+      <w>companiable</w>
+      <w>companiables</w>
       <w>coverartarchive</w>
       <w>deezer</w>
       <w>discogs</w>
+      <w>isrc</w>
       <w>itunes</w>
+      <w>joinphrase</w>
       <w>lastfm</w>
       <w>mbid</w>
       <w>musicbrainz</w>
       <w>playcount</w>
+      <w>playlists</w>
       <w>setlistfm</w>
       <w>songkick</w>
       <w>spotify</w>
       <w>streamable</w>
+      <w>taggable</w>
+      <w>taggables</w>
       <w>tracklist</w>
     </words>
   </dictionary>

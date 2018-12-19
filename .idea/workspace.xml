@@ -2,24 +2,90 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dfd46ea-f102-44db-a847-5ba95c11532d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Lastfm/ArtistResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Lastfm/LastfmClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Musicbrainz/ArtistResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Musicbrainz/MusicbrainzClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Napster/ArtistResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Napster/NapsterClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Setlistfm/ArtistResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Setlistfm/SetlistfmClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Lastfm/ArtistRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Musicbrainz/ArtistRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Napster/ArtistRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Setlistfm/ArtistRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Collections/DeezerGenres.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Bandsintown/Artist/ArtistBatchCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Deezer/Album/AlbumFansCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Deezer/Album/AlbumInfoCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Deezer/Album/AlbumTracksCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Deezer/Artist/ArtistBatchCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Deezer/Chart/ChartCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Deezer/Track/TrackInfoCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Subsider/Album/FixAlbumDateCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Exceptions/ArtistNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Deezer/AlbumResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Deezer/ChartResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Deezer/GenreResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Deezer/RadioResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Deezer/TrackResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Songkick/ArtistResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Songkick/SongkickClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Spotify/ArtistResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Spotify/SpotifyClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Tidal/ArtistResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Tidal/TidalClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Artist/ArtistAlbumsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Artist/ArtistRelatedController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Artist/ArtistTagsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Artist/ArtistTracksController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumFans.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumInfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumTracks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/Deezer/Chart/ProcessChart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/Deezer/Track/ProcessTrackInfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/Deezer/Traits/HasGuards.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Music/AlbumTrack.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Music/Label.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Deezer/AlbumRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Deezer/AuthorRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Deezer/ChartRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Deezer/RadioRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Deezer/TrackRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Songkick/ArtistRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Spotify/ArtistRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Tidal/ArtistRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Scopes/GenreScope.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Scopes/LabelScope.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/countries.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2018_12_19_150329_add_default_label_types.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/_card.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/_tabs.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/albums/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/related/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/tags/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/tracks/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/_nav.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/subsider.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/subsider.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/music.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/music.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Clients/Bandsintown/ArtistResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Clients/Bandsintown/ArtistResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Clients/Deezer/ArtistResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Clients/Deezer/ArtistResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Clients/Deezer/DeezerClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Clients/Deezer/DeezerClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Clients/Lastfm/ArtistResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Clients/Lastfm/ArtistResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Clients/Lastfm/LastfmClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Clients/Lastfm/LastfmClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Jobs/Bandsintown/Artist/ProcessArtistInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/Bandsintown/Artist/ProcessArtistInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Jobs/Lastfm/Artist/ProcessArtistSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/Lastfm/Artist/ProcessArtistSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Music/Artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Music/Artist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Provider/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Provider/Service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Type/ImageType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Type/ImageType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repositories/Bandsintown/ArtistRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Bandsintown/ArtistRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Deezer/ArtistRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Deezer/ArtistRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Musicbrainz/ArtistRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Musicbrainz/ArtistRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/clients.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_09_110009_create_artists_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_09_110009_create_artists_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_09_111943_create_services_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_09_111943_create_services_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,106 +99,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="clients.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/clients.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="68" column="6" lean-forward="true" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcessArtistSearch.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Jobs/Lastfm/Artist/ProcessArtistSearch.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="44" column="64" lean-forward="true" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
-              <folding>
-                <element signature="e#42#83#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ArtistResource.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Clients/Napster/ArtistResource.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Clients/Deezer/ArtistResource.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+            <state relative-caret-position="155">
+              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArtistRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Repositories/Napster/ArtistRepository.php">
+      <file leaf-file-name="ProcessAlbumInfo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumInfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="163">
+              <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArtistSearchCommand.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Console/Commands/Setlistfm/Artist/ArtistSearchCommand.php">
+      <file leaf-file-name="ProcessRadioInfo.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Radio/ProcessRadioInfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+            <state relative-caret-position="265">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
-                <element signature="e#57#107#0#PHP" expanded="true" />
+                <element signature="e#41#82#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArtistRepository.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Repositories/Setlistfm/ArtistRepository.php">
+      <file leaf-file-name="ProcessRadio.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Radio/ProcessRadio.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SetlistfmClient.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Clients/Setlistfm/SetlistfmClient.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcessArtistSearch.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Jobs/Setlistfm/Artist/ProcessArtistSearch.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            <state relative-caret-position="325">
+              <caret line="43" column="15" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="43" selection-end-column="15" />
               <folding>
-                <element signature="e#45#92#0#PHP" expanded="true" />
+                <element signature="e#41#82#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NapsterClient.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Clients/Napster/NapsterClient.php">
+      <file leaf-file-name="2018_12_14_110230_create_radios_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_14_110230_create_radios_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArtistResource.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Clients/Setlistfm/ArtistResource.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="247">
+              <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>strok</find>
+      <find>russia</find>
+      <find>korea</find>
+      <find>nb_</find>
+      <find>album_count</find>
+      <find>taggable</find>
+      <find>music/genre</find>
+      <find>de</find>
+      <find>contri</find>
+      <find>contribut</find>
+      <find>addt</find>
+      <find>chartrepo</find>
+      <find>dd</find>
+      <find>tag</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,57 +176,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Clients/Deezer/ArtistResource.php" />
-        <option value="$PROJECT_DIR$/app/Jobs/Deezer/Artist/ProcessArtistSearch.php" />
-        <option value="$PROJECT_DIR$/app/Http/Clients/Discogs/ArtistResource.php" />
-        <option value="$PROJECT_DIR$/app/Jobs/Discogs/Artist/ProcessArtistSearch.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/Genius/Artist/ArtistSearchCommand.php" />
-        <option value="$PROJECT_DIR$/app/Jobs/Genius/Artist/ArtistResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Clients/Genius/ArtistResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Clients/Discogs/DiscogsClient.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Http/Clients/Genius/GeniusClient.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/Deezer/TrackRepository.php" />
+        <option value="$PROJECT_DIR$/app/Models/Music/Tag.php" />
+        <option value="$PROJECT_DIR$/app/Scopes/GenreScope.php" />
+        <option value="$PROJECT_DIR$/app/Scopes/LabelScope.php" />
+        <option value="$PROJECT_DIR$/app/Models/Music/Label.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_19_150329_add_default_label_types.php" />
+        <option value="$PROJECT_DIR$/app/Models/Music/Company.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_14_111136_create_companiables_table.php" />
         <option value="$PROJECT_DIR$/app/Models/Type/ImageType.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_12_09_115150_add_default_image_types.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Deezer/ArtistRepository.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Discogs/ArtistRepository.php" />
-        <option value="$PROJECT_DIR$/app/Jobs/Genius/Artist/ProcessArtistSearch.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Genius/ArtistRepository.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/Itunes/Artist/ArtistSearchCommand.php" />
-        <option value="$PROJECT_DIR$/app/Http/Clients/Itunes/ItunesClient.php" />
-        <option value="$PROJECT_DIR$/app/Http/Clients/Itunes/ArtistResource.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Itunes/ArtistRepository.php" />
-        <option value="$PROJECT_DIR$/app/Jobs/Itunes/Artist/ProcessArtistSearch.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/ArtistRelationshipResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/ArtistsResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/ArtistResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/ServiceResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Artist/ArtistsController.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/Lastfm/Artist/ArtistSearchCommand.php" />
-        <option value="$PROJECT_DIR$/app/Http/Clients/Lastfm/ArtistResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Clients/Lastfm/LastfmClient.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_12_09_111943_create_services_table.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Bandsintown/ArtistRepository.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Lastfm/ArtistRepository.php" />
-        <option value="$PROJECT_DIR$/app/Jobs/Lastfm/Artist/ProcessArtistSearch.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/Musicbrainz/Artist/ArtistSearchCommand.php" />
-        <option value="$PROJECT_DIR$/app/Http/Clients/Musicbrainz/ArtistResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Clients/Musicbrainz/MusicbrainzClient.php" />
-        <option value="$PROJECT_DIR$/app/Jobs/Musicbrainz/Artist/ProcessArtistSearch.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/Napster/Artist/ArtistSearchCommand.php" />
-        <option value="$PROJECT_DIR$/app/Http/Clients/Napster/NapsterClient.php" />
-        <option value="$PROJECT_DIR$/app/Http/Clients/Napster/ArtistResource.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Musicbrainz/ArtistRepository.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Napster/ArtistRepository.php" />
-        <option value="$PROJECT_DIR$/app/Jobs/Napster/Artist/ProcessArtistSearch.php" />
-        <option value="$PROJECT_DIR$/app/Http/Clients/Setlistfm/ArtistResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Clients/Setlistfm/SetlistfmClient.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/Setlistfm/Artist/ArtistSearchCommand.php" />
-        <option value="$PROJECT_DIR$/app/Jobs/Setlistfm/Artist/ProcessArtistSearch.php" />
-        <option value="$PROJECT_DIR$/config/clients.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Setlistfm/ArtistRepository.php" />
+        <option value="$PROJECT_DIR$/app/Models/Music/Genre.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Deezer/Genre/GenreScraperCommand.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Deezer/Album/AlbumFansCommand.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/Deezer/Traits/HasGuards.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumFans.php" />
+        <option value="$PROJECT_DIR$/app/Models/Music/AlbumTrack.php" />
+        <option value="$PROJECT_DIR$/app/Http/Clients/Deezer/AlbumResource.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Deezer/Album/AlbumTracksCommand.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumTracks.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Deezer/Track/TrackInfoCommand.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumInfo.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_14_100920_create_album_track_table.php" />
+        <option value="$PROJECT_DIR$/app/Models/Music/Album.php" />
+        <option value="$PROJECT_DIR$/app/Models/Music/Track.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/Deezer/AlbumRepository.php" />
+        <option value="$PROJECT_DIR$/app/Http/Clients/Deezer/TrackResource.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/Deezer/Track/ProcessTrackInfo.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_14_105046_create_charts_table.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Deezer/Chart/ChartTracksCommand.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/Deezer/Chart/ProcessChartTracks.php" />
+        <option value="$PROJECT_DIR$/app/Http/Clients/Deezer/ChartResource.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Deezer/Chart/ChartCommand.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/Deezer/Artist/ProcessArtistPlaylists.php" />
+        <option value="$PROJECT_DIR$/app/Models/Music/Chart.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_17_141921_add_default_chart_types.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/Deezer/Chart/ProcessChart.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_14_110021_create_tags_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_14_110216_create_taggables_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_14_104010_create_radios_table.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Deezer/Radio/RadioCommand.php" />
+        <option value="$PROJECT_DIR$/app/Http/Clients/Deezer/DeezerClient.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/Deezer/ChartRepository.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/Deezer/RadioRepository.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Deezer/Radio/RadioGenresCommand.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_14_110230_create_radios_table.php" />
+        <option value="$PROJECT_DIR$/app/Models/Music/Radio.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/Deezer/Radio/ProcessRadioGenres.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Deezer/Radio/RadioInfoCommand.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/Deezer/Radio/ProcessRadio.php" />
+        <option value="$PROJECT_DIR$/app/Http/Clients/Deezer/RadioResource.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/Deezer/Radio/ProcessRadioInfo.php" />
       </list>
     </option>
   </component>
@@ -199,6 +235,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -289,13 +328,17 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-query-builder" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-sluggable" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-collection-macros" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-698" />
-    <option name="y" value="-1057" />
-    <option name="width" value="2560" />
-    <option name="height" value="1057" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -303,6 +346,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,6 +363,12 @@
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
               <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Collections" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -334,7 +384,7 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Bandsintown" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
@@ -342,7 +392,42 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Bandsintown" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Genre" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Radio" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Discogs" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Discogs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -444,8 +529,15 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Setlistfm" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Songkick" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Spotify" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
@@ -458,28 +550,21 @@
               <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Clients" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Clients" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
               <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Bandsintown" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Bandsintown" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
@@ -494,6 +579,14 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Album" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -501,45 +594,24 @@
               <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Discogs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Chart" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
               <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Discogs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Radio" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
               <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Genius" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Genius" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Itunes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Itunes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Traits" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
@@ -560,31 +632,7 @@
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
               <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Napster" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Napster" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Setlistfm" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Setlistfm" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Models" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
@@ -610,56 +658,28 @@
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
               <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Discogs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Scopes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
               <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Genius" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
               <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Itunes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
               <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Lastfm" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Musicbrainz" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Napster" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Setlistfm" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -668,18 +688,19 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Repositories/Lastfm" />
-      <recent name="$PROJECT_DIR$/app/Http/Clients/Itunes" />
-      <recent name="$PROJECT_DIR$/app/Http/Clients" />
-      <recent name="$PROJECT_DIR$/database/factories" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Clients/Genius" />
+      <recent name="$PROJECT_DIR$/app/Models/Music" />
       <recent name="$PROJECT_DIR$/app/Models/Type" />
+      <recent name="$PROJECT_DIR$/app/Http/Clients/Genius" />
       <recent name="$PROJECT_DIR$/app/Models/Provider" />
       <recent name="$PROJECT_DIR$/app/Models/Media" />
-      <recent name="$PROJECT_DIR$/app/Models/Music" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Clients/Deezer" />
+      <recent name="$PROJECT_DIR$/app/Scopes" />
+      <recent name="$PROJECT_DIR$/resources/views/admin/artists" />
+      <recent name="$PROJECT_DIR$/app/Repositories/Lastfm" />
+      <recent name="$PROJECT_DIR$/app/Http/Clients/Itunes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -708,29 +729,39 @@
       <workItem from="1544352004498" duration="18505000" />
       <workItem from="1544443555663" duration="2175000" />
       <workItem from="1544447148663" duration="8258000" />
-      <workItem from="1544456045685" duration="3638000" />
+      <workItem from="1544456045685" duration="21065000" />
+      <workItem from="1544527871747" duration="551000" />
+      <workItem from="1544549160829" duration="5619000" />
+      <workItem from="1544599289420" duration="17000" />
+      <workItem from="1544771282104" duration="25360000" />
+      <workItem from="1545032356875" duration="3956000" />
+      <workItem from="1545039349881" duration="10457000" />
+      <workItem from="1545050924467" duration="2648000" />
+      <workItem from="1545054199933" duration="19182000" />
+      <workItem from="1545231117071" duration="13200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32591000" />
+    <option name="totallyTimeSpent" value="131008000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-698" y="-1057" width="2560" height="1057" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12827641" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2764706" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33279485" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.42291668" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -738,29 +769,28 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -771,370 +801,415 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Deezer/DeezerClient.php">
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Traits/HasGuards.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Deezer/ArtistResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="30" column="10" lean-forward="true" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Discogs/DiscogsClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Genius/Artist/ArtistSearchCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="245">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
           <folding>
-            <element signature="e#54#101#0#PHP" expanded="true" />
+            <element signature="e#42#69#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_09_115150_add_default_image_types.php">
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumFans.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Artist/ProcessArtistSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="469">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding>
-            <element signature="e#42#83#0#PHP" expanded="true" />
+            <element signature="e#41#82#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Discogs/ArtistRepository.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Deezer/AlbumResource.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="68" column="31" lean-forward="true" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+        <state relative-caret-position="720">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Type/ImageType.php">
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Deezer/Track/TrackInfoCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/Discogs/Artist/ProcessArtistSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="545">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
           <folding>
-            <element signature="e#43#86#0#PHP" expanded="true" />
+            <element signature="e#53#96#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/Bandsintown/Artist/ProcessArtistInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Genius/ArtistResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Itunes/Artist/ArtistSearchCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Genius/GeniusClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="53" column="52" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Genius/ArtistRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/Genius/Artist/ProcessArtistSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="34" column="52" lean-forward="true" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
-          <folding>
-            <element signature="e#42#83#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Itunes/ArtistResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/Itunes/Artist/ProcessArtistSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/ServiceResource.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/ArtistRelationshipResource.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/ArtistResource.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Artist/ArtistsController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/ArtistsResource.php" />
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Itunes/ItunesClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="47" column="70" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="47" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Lastfm/ArtistResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Itunes/ArtistRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Bandsintown/ArtistRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Deezer/ArtistRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="63" column="11" lean-forward="true" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_09_111943_create_services_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="23" column="61" lean-forward="true" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Musicbrainz/ArtistResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Lastfm/Artist/ArtistSearchCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-          <folding>
-            <element signature="e#54#101#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Lastfm/LastfmClient.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Music/AlbumTrack.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="8" column="7" selection-end-line="50" />
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Musicbrainz/Artist/ArtistSearchCommand.php">
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Deezer/Album/AlbumTracksCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        <state relative-caret-position="401">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
           <folding>
-            <element signature="e#59#111#0#PHP" expanded="true" />
+            <element signature="e#53#98#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/Musicbrainz/Artist/ProcessArtistSearch.php">
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Artist/ProcessArtistTracks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="336">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
-            <element signature="e#47#98#0#PHP" expanded="true" />
+            <element signature="e#42#83#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Lastfm/ArtistRepository.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_14_100920_create_album_track_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="70" column="5" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="70" selection-end-column="5" />
+        <state relative-caret-position="360">
+          <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Napster/Artist/ArtistSearchCommand.php">
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumTracks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="107">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
           <folding>
-            <element signature="e#55#103#0#PHP" expanded="true" />
+            <element signature="e#41#82#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Musicbrainz/MusicbrainzClient.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Music/Album.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="51" column="70" selection-start-line="47" selection-start-column="8" selection-end-line="51" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Musicbrainz/ArtistRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="46" column="62" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Napster/ArtistResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Napster/NapsterClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Setlistfm/Artist/ArtistSearchCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="264">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="31" />
           <folding>
-            <element signature="e#57#107#0#PHP" expanded="true" />
+            <element signature="e#36#61#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Setlistfm/SetlistfmClient.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Music/Track.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="240">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/Napster/Artist/ProcessArtistSearch.php">
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Deezer/TrackRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="39" column="68" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
+        <state relative-caret-position="183">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Deezer/TrackResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Track/ProcessTrackInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="77" column="63" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
           <folding>
-            <element signature="e#43#86#0#PHP" expanded="true" />
+            <element signature="e#41#82#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Napster/ArtistRepository.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_14_101736_create_contributors_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="244">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_14_105046_create_charts_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/clients.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="68" column="6" lean-forward="true" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+        <state relative-caret-position="-267" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Deezer/ChartResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/Lastfm/Artist/ProcessArtistSearch.php">
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Deezer/Artist/ArtistRadioCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="44" column="64" lean-forward="true" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
+        <state relative-caret-position="275">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Deezer/Chart/ChartCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
           <folding>
-            <element signature="e#42#83#0#PHP" expanded="true" />
+            <element signature="e#53#98#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Setlistfm/ArtistResource.php">
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Deezer/Album/AlbumInfoCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/Setlistfm/Artist/ProcessArtistSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        <state relative-caret-position="265">
+          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
           <folding>
-            <element signature="e#45#92#0#PHP" expanded="true" />
+            <element signature="e#53#96#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Setlistfm/ArtistRepository.php">
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Deezer/Artist/ArtistPlaylistsCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+        <state relative-caret-position="207">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_17_141921_add_default_chart_types.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Artist/ProcessArtistRadio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Artist/ProcessArtistFans.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Deezer/AuthorRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Artist/ProcessArtistPlaylists.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="53" column="73" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Deezer/Artist/ArtistInfoCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_14_110021_create_tags_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Deezer/DeezerClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_14_110216_create_taggables_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Music/Taggable.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Deezer/Radio/RadioCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+          <folding>
+            <element signature="e#53#92#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Deezer/ChartRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Chart/ProcessChart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="101" column="44" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Music/Chart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#36#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Deezer/ArtistRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="e#43#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Deezer/RadioRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Deezer/Radio/RadioGenresCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="e#53#98#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_14_110230_create_radios_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Music/Radio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding>
+            <element signature="e#36#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Radio/ProcessRadioGenres.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Deezer/AlbumRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="181" column="46" lean-forward="true" selection-start-line="181" selection-start-column="46" selection-end-line="181" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Deezer/Radio/RadioInfoCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+          <folding>
+            <element signature="e#53#96#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Deezer/RadioResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Artist/ProcessArtistInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+          <folding>
+            <element signature="e#42#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Deezer/ArtistResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Radio/ProcessRadio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="43" column="15" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="43" selection-end-column="15" />
+          <folding>
+            <element signature="e#41#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Radio/ProcessRadioInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#41#82#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

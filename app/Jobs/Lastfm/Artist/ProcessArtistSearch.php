@@ -37,14 +37,27 @@ class ProcessArtistSearch implements ShouldQueue
      */
     public function handle(LastfmClient $client, ArtistRepository $artistRepository)
     {
-        $results = $client->artist()->search($this->artist)->get();
+        $page = 1;
 
-        foreach ($results['results']['artistmatches']['artist'] as $result) {
-            if (isset($result['mbid']) && $result['mbid'] != '') {
-                $artist = $artistRepository->create($result);
-                $artistRepository->addService($artist, $result);
-                // TODO: images
+        do {
+            dump("Page: $page");
+            $results = $client->artist()
+                ->search(urlencode($this->artist))
+                ->limit(1000)
+                ->page($page)
+                ->get();
+
+            foreach ($results['results']['artistmatches']['artist'] as $result) {
+                if (isset($result['mbid']) && $result['mbid'] != '') {
+                    $artist = $artistRepository->create($result);
+                    dump($artist->name);
+                    $artistRepository->addService($artist, $result);
+                    // TODO: images
+                }
             }
-        }
+
+            $page++;
+            $client->params['page'] = $page;
+        } while (! empty($results['results']['artistmatches']['artist']));
     }
 }

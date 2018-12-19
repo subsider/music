@@ -21,10 +21,16 @@ class CreateServicesTable extends Migration
             $table->text('api_url')->nullable();
             $table->text('web_url')->nullable();
             $table->text('tracklist_url')->nullable();
+            $table->text('preview_url')->nullable();
             $table->unsignedInteger('listeners')->nullable();
             $table->unsignedInteger('count')->nullable();
+            $table->unsignedInteger('rank')->nullable();
+            $table->unsignedInteger('score')->nullable();
+            $table->unsignedTinyInteger('popularity')->nullable();
             $table->boolean('streamable')->nullable();
+            $table->timestamp('crawled_at')->nullable();
             $table->timestamps();
+            $table->softDeletes();
 
             $table->foreign('provider_id')
                 ->references('id')

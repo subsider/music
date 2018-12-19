@@ -6,6 +6,8 @@ use GuzzleHttp\Client;
 
 class LastfmClient
 {
+    const MAX_LIMIT = 1000;
+
     /**
      * @var Client
      */
@@ -30,9 +32,38 @@ class LastfmClient
         ];
     }
 
+    /**
+     * @return ArtistResource
+     */
     public function artist()
     {
         return new ArtistResource($this);
+    }
+
+    /**
+     * @param int $page
+     * @return $this
+     */
+    public function page(int $page)
+    {
+        $this->params = array_merge([
+            'page' => $page,
+        ], $this->params);
+
+        return $this;
+    }
+
+    /**
+     * @param int $limit
+     * @return $this
+     */
+    public function limit(int $limit = self::MAX_LIMIT)
+    {
+        $this->params = array_merge([
+            'limit' => $limit,
+        ], $this->params);
+
+        return $this;
     }
 
     /**

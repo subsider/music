@@ -33,6 +33,10 @@ class ImageType extends BaseModel
      * Header: 1000x600
      */
 
+    const AVATAR = 2;
+    const THUMB = 3;
+    const COVER = 4;
+
     public function images()
     {
         return $this->hasMany(Image::class);

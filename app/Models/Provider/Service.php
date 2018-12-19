@@ -6,6 +6,8 @@ use App\Models\BaseModel;
 
 class Service extends BaseModel
 {
+    protected $dates = ['crawled_at', 'deleted_at'];
+
     public function provider()
     {
         return $this->belongsTo(Provider::class);

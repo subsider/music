@@ -49,8 +49,8 @@ class ArtistRepository
 
         if (isset($attributes['id']) && $attributes['id'] != '') {
             $service->internal_id = $attributes['id'];
-            $service->web_url = config('clients.musicbrainz.web_url') . "artist/{$attributes['id']}";
-            $service->api_url = config('clients.musicbrainz.api_url') . "artist/{$attributes['id']}?fmt=json";
+            $service->web_url     = config('clients.musicbrainz.web_url') . "artist/{$attributes['id']}";
+            $service->api_url     = config('clients.musicbrainz.api_url') . "artist/{$attributes['id']}?fmt=json";
         }
 
         if ($service->isDirty()) {

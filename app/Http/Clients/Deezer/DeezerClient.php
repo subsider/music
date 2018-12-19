@@ -6,6 +6,8 @@ use GuzzleHttp\Client;
 
 class DeezerClient
 {
+    const MAX_LIMIT = 50;
+
     /**
      * @var Client
      */
@@ -19,7 +21,7 @@ class DeezerClient
     /**
      * @var array
      */
-    public $query;
+    public $query = [];
 
     /**
      * BandsintownClient constructor.
@@ -38,6 +40,61 @@ class DeezerClient
     public function artist()
     {
         return new ArtistResource($this);
+    }
+
+    /**
+     * @return AlbumResource
+     */
+    public function album()
+    {
+        return new AlbumResource($this);
+    }
+
+    /**
+     * @return TrackResource
+     */
+    public function track()
+    {
+        return new TrackResource($this);
+    }
+
+    /**
+     * @return GenreResource
+     */
+    public function genre()
+    {
+        return new GenreResource($this);
+    }
+
+    /**
+     * @return ChartResource
+     */
+    public function chart()
+    {
+        return new ChartResource($this);
+    }
+
+    /**
+     * @return RadioResource
+     */
+    public function radio()
+    {
+        return new RadioResource($this);
+    }
+
+    /**
+     * @param int $limit
+     * @return $this
+     */
+    public function limit(int $limit = self::MAX_LIMIT)
+    {
+        $this->query = array_merge([
+            'query' => [
+                'limit' => $limit
+            ],
+        ], $this->query);
+
+        return $this;
     }
 
     /**

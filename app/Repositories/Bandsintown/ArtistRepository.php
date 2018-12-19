@@ -43,6 +43,10 @@ class ArtistRepository
             $artist->facebook_page_url = $attributes['facebook_page_url'];
         }
 
+        if (isset($attributes['upcoming_event_count']) && $attributes['upcoming_event_count'] != '') {
+            $artist->upcoming_event_count = $attributes['upcoming_event_count'];
+        }
+
         if ($artist->isDirty()) {
             $artist->save();
         }
@@ -64,7 +68,7 @@ class ArtistRepository
             'web_url' => strtok($attributes['url'], '?'),
         ]);
 
-        if ($attributes['id']) {
+        if (isset($attributes['id'])) {
             $service->internal_id = $attributes['id'];
         }
 

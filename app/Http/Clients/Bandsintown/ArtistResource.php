@@ -18,9 +18,24 @@ class ArtistResource
         $this->client = $client;
     }
 
+    /**
+     * @param string $artist
+     * @return BandsintownClient
+     */
     public function info(string $artist)
     {
         $this->client->url = "artists/{$artist}";
+
+        return $this->client;
+    }
+
+    /**
+     * @param string $artist
+     * @return BandsintownClient
+     */
+    public function events(string $artist)
+    {
+        $this->client->url = "artists/{$artist}/events";
 
         return $this->client;
     }

@@ -4,6 +4,7 @@ return [
     'bandsintown' => [
         'id'      => 1,
         'name'    => 'Bandsintown',
+        'web_url' => env('BANDSINTOWN_WEB_URL', 'https://www.bandsintown.com/'),
         'api_url' => env('BANDSINTOWN_API_URL', 'https://rest.bandsintown.com/'),
         'api_key' => env('BANDSINTOWN_API_KEY'),
     ],
@@ -11,6 +12,7 @@ return [
     'coverartarchive' => [
         'id'      => 2,
         'name'    => 'Cover Art Archive',
+        'web_url' => env('COVERARTARCHIVE_WEB_URL', 'https://coverartarchive.org/'),
         'api_url' => env('COVERARTARCHIVE_API_URL', 'https://coverartarchive.org/release/'),
     ],
 
@@ -79,20 +81,24 @@ return [
     'songkick' => [
         'id'      => 11,
         'name'    => 'Songkick',
+        'web_url' => env('SONGKICK_WEB_URL', 'https://www.songkick.com/'),
         'api_url' => env('SONGKICK_API_URL', 'http://api.songkick.com/api/3.0/'),
         'api_key' => env('SONGKICK_API_KEY'),
     ],
 
     'spotify' => [
-        'id'      => 12,
-        'name'    => 'Spotify',
-        'api_url' => env('SPOTIFY_API_URL', 'https://api.spotify.com/v1/'),
-        'api_key' => env('SPOTIFY_API_KEY'),
+        'id'            => 12,
+        'name'          => 'Spotify',
+        'web_url'       => env('SPOTIFY_WEB_URL', 'https://www.spotify.com/'),
+        'api_url'       => env('SPOTIFY_API_URL', 'https://api.spotify.com/v1/'),
+        'client_id'     => env('SPOTIFY_CLIENT_ID'),
+        'client_secret' => env('SPOTIFY_CLIENT_SECRET'),
     ],
 
     'tidal' => [
         'id'      => 13,
         'name'    => 'Tidal',
+        'web_url' => env('TIDAL_WEB_URL', 'https://tidal.com/'),
         'api_url' => env('TIDAL_API_URL', 'https://api.tidalhifi.com/v1/'),
         'api_key' => env('TIDAL_API_KEY'),
     ],
