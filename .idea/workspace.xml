@@ -2,90 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dfd46ea-f102-44db-a847-5ba95c11532d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Collections/DeezerGenres.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Bandsintown/Artist/ArtistBatchCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Deezer/Album/AlbumFansCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Deezer/Album/AlbumInfoCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Deezer/Album/AlbumTracksCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Deezer/Artist/ArtistBatchCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Deezer/Chart/ChartCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Deezer/Track/TrackInfoCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Subsider/Album/FixAlbumDateCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/ArtistNotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Deezer/AlbumResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Deezer/ChartResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Deezer/GenreResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Deezer/RadioResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Deezer/TrackResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Songkick/ArtistResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Songkick/SongkickClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Spotify/ArtistResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Spotify/SpotifyClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Tidal/ArtistResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Clients/Tidal/TidalClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Artist/ArtistAlbumsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Artist/ArtistRelatedController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Artist/ArtistTagsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Artist/ArtistTracksController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumFans.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumInfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumTracks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/Deezer/Chart/ProcessChart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/Deezer/Track/ProcessTrackInfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/Deezer/Traits/HasGuards.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Music/AlbumTrack.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Music/Label.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Deezer/AlbumRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Deezer/AuthorRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Deezer/ChartRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Deezer/RadioRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Deezer/TrackRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Songkick/ArtistRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Spotify/ArtistRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Tidal/ArtistRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Scopes/GenreScope.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Scopes/LabelScope.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/countries.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2018_12_19_150329_add_default_label_types.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/_card.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/_tabs.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/albums/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/related/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/tags/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/artists/tracks/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/_nav.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/subsider.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/subsider.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/music.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/music.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Clients/Bandsintown/ArtistResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Clients/Bandsintown/ArtistResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Clients/Deezer/ArtistResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Clients/Deezer/ArtistResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Clients/Deezer/DeezerClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Clients/Deezer/DeezerClient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Clients/Lastfm/ArtistResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Clients/Lastfm/ArtistResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Clients/Lastfm/LastfmClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Clients/Lastfm/LastfmClient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Jobs/Bandsintown/Artist/ProcessArtistInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/Bandsintown/Artist/ProcessArtistInfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Jobs/Lastfm/Artist/ProcessArtistSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/Lastfm/Artist/ProcessArtistSearch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Music/Artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Music/Artist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Provider/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Provider/Service.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Type/ImageType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Type/ImageType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Bandsintown/ArtistRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Bandsintown/ArtistRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Deezer/ArtistRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Deezer/ArtistRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Musicbrainz/ArtistRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Musicbrainz/ArtistRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/clients.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_09_110009_create_artists_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_09_110009_create_artists_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_09_111943_create_services_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_09_111943_create_services_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -99,53 +22,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ArtistResource.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Clients/Deezer/ArtistResource.php">
+      <file leaf-file-name="PublicationCrawlCommand.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/AOTY/Publication/PublicationCrawlCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+            <state relative-caret-position="212">
+              <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProcessAlbumInfo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumInfo.php">
+      <file leaf-file-name="GenreCrawlCommand.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/AOTY/Genre/GenreCrawlCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="44" />
+            <state relative-caret-position="384">
+              <caret line="57" column="91" selection-start-line="57" selection-start-column="91" selection-end-line="57" selection-end-column="91" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProcessRadioInfo.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Radio/ProcessRadioInfo.php">
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="e#41#82#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcessRadio.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Radio/ProcessRadio.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="43" column="15" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="43" selection-end-column="15" />
-              <folding>
-                <element signature="e#41#82#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018_12_14_110230_create_radios_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_14_110230_create_radios_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            <state relative-caret-position="365">
+              <caret line="207" column="12" selection-start-line="207" selection-start-column="12" selection-end-line="207" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -176,9 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Repositories/Deezer/TrackRepository.php" />
-        <option value="$PROJECT_DIR$/app/Models/Music/Tag.php" />
-        <option value="$PROJECT_DIR$/app/Scopes/GenreScope.php" />
         <option value="$PROJECT_DIR$/app/Scopes/LabelScope.php" />
         <option value="$PROJECT_DIR$/app/Models/Music/Label.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_19_150329_add_default_label_types.php" />
@@ -227,6 +123,9 @@
         <option value="$PROJECT_DIR$/app/Jobs/Deezer/Radio/ProcessRadio.php" />
         <option value="$PROJECT_DIR$/app/Http/Clients/Deezer/RadioResource.php" />
         <option value="$PROJECT_DIR$/app/Jobs/Deezer/Radio/ProcessRadioInfo.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/AOTY/Publication/PublicationCrawlCommand.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/AOTY/Genre/GenreCrawlCommand.php" />
       </list>
     </option>
   </component>
@@ -333,6 +232,10 @@
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-collection-macros" />
+      <path value="$PROJECT_DIR$/vendor/fabpot/goutte" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/weidner/goutte" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -363,12 +266,6 @@
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
               <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Collections" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -384,7 +281,7 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AOTY" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="music" type="b2602c69:ProjectViewProjectNode" />
@@ -392,16 +289,7 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AOTY" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Genre" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -410,271 +298,8 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Radio" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Discogs" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Discogs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Genius" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Genius" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Itunes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Itunes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Lastfm" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Lastfm" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Musicbrainz" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Musicbrainz" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Napster" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Napster" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Setlistfm" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Songkick" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Spotify" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Clients" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Clients" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Album" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Chart" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Radio" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Traits" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Lastfm" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Lastfm" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Artist" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Models" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Bandsintown" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Deezer" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Scopes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AOTY" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Publication" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -738,12 +363,12 @@
       <workItem from="1545039349881" duration="10457000" />
       <workItem from="1545050924467" duration="2648000" />
       <workItem from="1545054199933" duration="19182000" />
-      <workItem from="1545231117071" duration="13200000" />
+      <workItem from="1545231117071" duration="18416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131008000" />
+    <option name="totallyTimeSpent" value="136224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -754,7 +379,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2764706" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.120588236" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33279485" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -805,33 +430,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Traits/HasGuards.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="e#42#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumFans.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#41#82#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Deezer/AlbumResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/Deezer/Track/TrackInfoCommand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="545">
@@ -1169,13 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Artist/ProcessArtistInfo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1183,13 +774,6 @@
           <folding>
             <element signature="e#42#85#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Deezer/ArtistResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1205,11 +789,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Radio/ProcessRadioInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="1040">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="e#41#82#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/Deezer/Album/ProcessAlbumInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Clients/Deezer/ArtistResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="207" column="12" selection-start-line="207" selection-start-column="12" selection-end-line="207" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/AOTY/Publication/PublicationCrawlCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/AOTY/Genre/GenreCrawlCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="57" column="91" selection-start-line="57" selection-start-column="91" selection-end-line="57" selection-end-column="91" />
         </state>
       </provider>
     </entry>
