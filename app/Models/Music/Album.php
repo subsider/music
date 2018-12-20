@@ -4,17 +4,26 @@ namespace App\Models\Music;
 
 use App\Models\BaseModel;
 use App\Models\Media\Image;
+use App\Models\Provider\Publication;
 use App\Models\Provider\Service;
 use App\Models\Type\AlbumType;
-use App\Music\Genre;
+use Cog\Contracts\Love\Likeable\Models\Likeable as LikeableContract;
+use Cog\Laravel\Love\Likeable\Models\Traits\Likeable;
 
-class Album extends BaseModel
+class Album extends BaseModel implements LikeableContract
 {
+    use Likeable;
+
     protected $dates = ['release_date'];
 
     public function getFormattedReleaseDateAttribute()
     {
         return $this->release_date->format('Y-m-d');
+    }
+
+    public function artists()
+    {
+        return $this->belongsToMany(Artist::class, 'artist_album');
     }
 
     public function type()
@@ -46,7 +55,12 @@ class Album extends BaseModel
 
     public function genres()
     {
-        return $this->morphToMany(Genre::class, 'taggable');
+        return $this->morphToMany(
+            Genre::class, 'taggable',
+            'taggables',
+            'taggable_id',
+            'tag_id'
+        );
     }
 
     public function companies()
@@ -57,10 +71,19 @@ class Album extends BaseModel
     public function labels()
     {
         return $this->morphToMany(
-            Label::class, 'companiable',
+            Label::class,
+            'companiable',
             'companiables',
             'companiable_id',
             'company_id'
         );
+    }
+
+    public function score()
+    {
+        return $this->hasOne(Score::class, 'model_id')
+            ->where('owner_id', Publication::AOTY)
+            ->where('score_type_id', Score::CRITIC)
+            ->where('owner_type', 'App\Models\Provider\Publication');
     }
 }

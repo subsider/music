@@ -18,6 +18,7 @@ class CreateChartItemsTable extends Migration
             $table->unsignedBigInteger('chart_id');
             $table->unsignedBigInteger('item_id');
             $table->unsignedInteger('rank');
+            $table->unsignedInteger('score')->nullable();
             $table->timestamps();
 
             $table->foreign('chart_id')
@@ -25,7 +26,7 @@ class CreateChartItemsTable extends Migration
                 ->on('charts')
                 ->onDelete('cascade');
 
-            $table->unique(['chart_id', 'item_id', 'rank']);
+            $table->unique(['chart_id', 'item_id', 'rank', 'score']);
         });
     }
 

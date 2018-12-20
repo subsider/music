@@ -1,0 +1,102 @@
+<?php
+
+namespace App\Http\Controllers\Admin\Chart;
+
+use App\Models\Music\Chart;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+class ChartsController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $charts = Chart::with('type')
+            ->with('genre')
+            ->with('publication')
+            ->withCount('albums')
+            ->oldest('id')
+            ->paginate();
+
+        return view('admin.charts.index', [
+            'charts' => $charts,
+        ]);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param Chart $chart
+     * @return Chart
+     */
+    public function show(Chart $chart)
+    {
+        $albums = $chart->albums()->with('artists', 'genres')->get();
+
+        $chart->load('type')->load('publication')->load('genre');
+
+        return view('admin.charts.show', [
+            'chart'  => $chart,
+            'albums' => $albums,
+        ]);
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @param  int $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
+    }
+}

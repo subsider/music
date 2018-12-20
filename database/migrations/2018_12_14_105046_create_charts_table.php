@@ -17,14 +17,18 @@ class CreateChartsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedInteger('provider_id');
             $table->unsignedInteger('chart_type_id');
+            $table->unsignedInteger('tag_id')->nullable();
+            $table->unsignedInteger('publication_id')->nullable();
             $table->unsignedBigInteger('owner_id')->nullable();
             $table->string('owner_type')->nullable();
             $table->string('internal_id')->nullable();
             $table->string('name');
             $table->boolean('public')->nullable();
             $table->uuid('checksum')->nullable();
+            $table->string('url')->nullable();
             $table->text('tracklist_url')->nullable();
             $table->timestamp('published_at')->nullable();
+            $table->timestamp('crawled_at')->nullable();
             $table->timestamps();
 
             $table->foreign('chart_type_id')
@@ -37,8 +41,18 @@ class CreateChartsTable extends Migration
                 ->on('providers')
                 ->onDelete('cascade');
 
+            $table->foreign('tag_id')
+                ->references('id')
+                ->on('tags')
+                ->onDelete('cascade');
+
+            $table->foreign('publication_id')
+                ->references('id')
+                ->on('publications')
+                ->onDelete('cascade');
+
             $table->unique(
-                ['provider_id', 'chart_type_id', 'owner_id', 'owner_type', 'internal_id'],
+                ['provider_id', 'chart_type_id', 'owner_id', 'owner_type', 'internal_id', 'publication_id', 'tag_id'],
                 'chart_unique'
             );
         });

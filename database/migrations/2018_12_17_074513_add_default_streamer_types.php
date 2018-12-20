@@ -9,7 +9,11 @@ class AddDefaultStreamerTypes extends Migration
      * @var array
      */
     protected $streamers = [
-        'Youtube' => 'https://www.youtube.com'
+        'Youtube'     => 'https://www.youtube.com',
+        'Amazon'      => 'http://www.amazon.com',
+        'iTunes'      => 'https://itunes.apple.com',
+        'Apple Music' => 'https://itunes.apple.com',
+        'Spotify'     => 'http://open.spotify.com',
     ];
 
     /**
@@ -22,7 +26,7 @@ class AddDefaultStreamerTypes extends Migration
         foreach ($this->streamers as $name => $url) {
             StreamerType::create([
                 'name' => $name,
-                'url' => $url,
+                'url'  => $url,
             ]);
         }
     }

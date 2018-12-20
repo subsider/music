@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateStreamerTypesTable extends Migration
+class CreateScoreTypes extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateStreamerTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('streamer_types', function (Blueprint $table) {
+        Schema::create('score_types', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->unique();
-            $table->string('url');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreateStreamerTypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('streamer_types');
+        Schema::dropIfExists('score_types');
     }
 }

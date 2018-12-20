@@ -102,4 +102,10 @@ return [
         'api_url' => env('TIDAL_API_URL', 'https://api.tidalhifi.com/v1/'),
         'api_key' => env('TIDAL_API_KEY'),
     ],
+
+    'aoty' => [
+        'id'      => 14,
+        'name'    => 'AOTY',
+        'web_url' => env('AOTY_WEB_URL', 'https://www.albumoftheyear.org'),
+    ],
 ];

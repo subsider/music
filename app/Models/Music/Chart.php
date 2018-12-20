@@ -4,6 +4,8 @@ namespace App\Models\Music;
 
 use App\Models\BaseModel;
 use App\Models\Media\Image;
+use App\Models\Provider\Publication;
+use App\Models\Type\ChartType;
 
 class Chart extends BaseModel
 {
@@ -12,9 +14,36 @@ class Chart extends BaseModel
     const TRACK = 3;
     const PLAYLIST = 4;
 
+    protected $dates = ['crawled_at'];
+
+    public function type()
+    {
+        return $this->belongsTo(ChartType::class, 'chart_type_id');
+    }
+
+    public function genre()
+    {
+        return $this->belongsTo(Tag::class, 'tag_id');
+    }
+
+    public function publication()
+    {
+        return $this->belongsTo(Publication::class);
+    }
+
     public function images()
     {
         return $this->morphMany(Image::class, 'model');
+    }
+
+    public function chartItems()
+    {
+        return $this->belongsToMany(
+            ChartItem::class,
+            'PIVOT',
+            'chart_id',
+            'item_id'
+        )->withTimestamps();
     }
 
     public function tracks()
@@ -34,7 +63,9 @@ class Chart extends BaseModel
             'chart_items',
             'chart_id',
             'item_id'
-        )->withTimestamps();
+        )->withPivot('rank', 'score')
+            ->orderBy('rank')
+            ->withTimestamps();
     }
 
     public function artists()

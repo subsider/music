@@ -27,4 +27,13 @@ Route::name('admin.')->prefix('admin')->namespace('Admin')->group(function () {
         Route::resource('artists.tracks', 'ArtistTracksController');
         Route::resource('artists.tags', 'ArtistTagsController');
     });
+
+    Route::namespace('Album')->group(function () {
+        Route::post('albums/{album}/like', 'AlbumLikesController@store')->name('albums.like');
+        Route::delete('albums/{album}/like', 'AlbumLikesController@destroy')->name('albums.unlike');
+    });
+
+    Route::namespace('Chart')->group(function () {
+        Route::resource('charts', 'ChartsController');
+    });
 });

@@ -16,6 +16,7 @@
                                 <th>Name</th>
                                 <th>Mbid</th>
                                 <th class="text-nowrap">Release Date</th>
+                                <th></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -26,6 +27,22 @@
                                     </td>
                                     <td class="mbid">{{ $album->mbid }}</td>
                                     <td>{{ $album->year ?? '' }}</td>
+                                    <th>
+                                        @auth
+                                            @if(!$album->liked)
+                                                <form action="{{ route('admin.albums.like', $album) }}" method="POST">
+                                                    @csrf
+                                                    <button type="submit" class="btn btn-sm btn-primary">Like</button>
+                                                </form>
+                                            @else
+                                                <form action="{{ route('admin.albums.unlike', $album) }}" method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="btn btn-sm btn-primary">Unlike</button>
+                                                </form>
+                                            @endif
+                                        @endauth
+                                    </th>
                                 </tr>
                             @endforeach
                             </tbody>

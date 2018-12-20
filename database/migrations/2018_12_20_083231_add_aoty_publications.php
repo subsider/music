@@ -1,10 +1,10 @@
 <?php
 
-use App\Models\Provider\Service;
+use App\Models\Provider\Publication;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\Artisan;
 
-class AddDeezerGenres extends Migration
+class AddAotyPublications extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AddDeezerGenres extends Migration
      */
     public function up()
     {
-        Artisan::call('deezer:genre:crawl');
+        Artisan::call('aoty:publication:crawl');
     }
 
     /**
@@ -23,7 +23,6 @@ class AddDeezerGenres extends Migration
      */
     public function down()
     {
-        Service::truncate();
-        Genre::truncate();
+        Publication::truncate();
     }
 }

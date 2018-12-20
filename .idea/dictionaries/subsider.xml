@@ -1,8 +1,10 @@
 <component name="ProjectDictionaryState">
   <dictionary name="subsider">
     <words>
+      <w>aoty</w>
       <w>apikey</w>
       <w>artistmatches</w>
+      <w>authenticatable</w>
       <w>bandsintown</w>
       <w>catno</w>
       <w>companiable</w>
@@ -15,6 +17,7 @@
       <w>itunes</w>
       <w>joinphrase</w>
       <w>lastfm</w>
+      <w>likeable</w>
       <w>mbid</w>
       <w>musicbrainz</w>
       <w>playcount</w>
@@ -23,6 +26,7 @@
       <w>songkick</w>
       <w>spotify</w>
       <w>streamable</w>
+      <w>streamings</w>
       <w>taggable</w>
       <w>taggables</w>
       <w>tracklist</w>
